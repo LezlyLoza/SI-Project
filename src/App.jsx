@@ -1,5 +1,5 @@
 // src/App.jsx
-import React, {useState} from 'react';
+import React, { useState, useEffect } from 'react';
 import Navbar from './components/Navbar.jsx';
 import Carousel from './components/Carousel.jsx';
 import TypewriterComponent from './components/TypewriterComponent.jsx';
@@ -8,8 +8,7 @@ import {toast, ToastContainer} from 'react-toastify'; // ya lo tenías, solo ase
 import 'react-toastify/dist/ReactToastify.css';
 import FiltroEventos from './components/FiltrarEvento.jsx';
 import {useLocation} from 'react-router-dom';
-import {useEffect} from 'react';
-
+//import {useEffect} from 'react';
 
 const App = () => {
     const [filtros, setFiltros] = useState({
@@ -33,6 +32,7 @@ const App = () => {
 
     return (
         <>
+        
             <Navbar/>
 
             {/* Carrusel de imágenes */}
