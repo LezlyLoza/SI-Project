@@ -89,6 +89,8 @@
             'apikey': import.meta.env.VITE_SUPABASE_KEY,
             "Authorization": `Bearer ${import.meta.env.VITE_SUPABASE_KEY}`, // Aquí añades el token
           },
+          // filepath: c:\Users\user\SI-Project\src\pages\Login.jsx
+       
           body: JSON.stringify({ registro: registroInt }),
         }
       );
