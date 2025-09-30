@@ -2,11 +2,11 @@
 import { createClient } from '@supabase/supabase-js'
 
 const url  = import.meta.env.VITE_SUPABASE_URL
-const anon = import.meta.env.VITE_SUPABASE_ANON_KEY
+const anon = import.meta.env.VITE_SUPABASE_KEY
 
 // Debug útil (aparecerá en la consola si falta algo en Vercel o en build local)
 if (!url || !anon) {
-  console.error('Faltan VITE_SUPABASE_URL o VITE_SUPABASE_ANON_KEY')
+  console.error('Faltan VITE_SUPABASE_URL o VITE_SUPABASE_KEY')
 }
 
 const client = createClient(url ?? '', anon ?? '', {
