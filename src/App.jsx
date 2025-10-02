@@ -9,6 +9,10 @@ import 'react-toastify/dist/ReactToastify.css';
 import FiltroEventos from './components/FiltrarEvento.jsx';
 import {useLocation} from 'react-router-dom';
 //import {useEffect} from 'react';
+import supabase from "./utils/supabaseClient.js";
+// ...existing code...
+window.supabase = supabase; // <-- Agrega esta línea
+// ...existing code...
 
 const App = () => {
     const [filtros, setFiltros] = useState({

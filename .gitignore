@@ -24,3 +24,6 @@ dist-ssr
 *.sw?
 # Archivos de entorno
 .env
+.env.*
+node_modules/
+dist/
